@@ -25,7 +25,7 @@ title: Mon CV
 ---
 
 
-## 🎓 Formation
+##  Formation
 
 **Licence Informatique**  
 :contentReference[oaicite:0]{index=0}  
