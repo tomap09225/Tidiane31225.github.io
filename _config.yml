@@ -3,3 +3,7 @@ theme: minima
 
 header_pages:
   - formation.md
+
+nav:
+  - Accueil CV: index.md
+  - Formation: formation.md
