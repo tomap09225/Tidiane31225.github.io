@@ -3,7 +3,3 @@ theme: minima
 
 header_pages:
   - formation.md
-
-nav:
-  - Accueil: index.md
-  - Formation: formation.md
