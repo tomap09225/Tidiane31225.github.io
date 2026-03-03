@@ -6,6 +6,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+  const code = prompt("Entrez le code d'accès :");
+
+  if (code !== "RecrutezMoi2026!") {
+    document.body.innerHTML = `
+      <div style="
+        background:#2f2f2f;
+        color:white;
+        height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-family:Arial;
+        font-size:20px;
+      ">
+        Accès refusé
+      </div>
+    `;
+  }
+</script>
 
 <div class="cv">
 
@@ -36,11 +56,11 @@
   <ul class="icon-list">
     <li class="icon">
       <img src="https://raw.githubusercontent.com/twbs/icons/main/icons/envelope.svg" class="contact-icon" alt="Email">
-      tidi...@email.com
+      tidiane.michel@protonmail.com
     </li>
     <li class="icon">
       <img src="https://raw.githubusercontent.com/twbs/icons/main/icons/telephone.svg" class="contact-icon" alt="Tel">
-      06 XX XX XX XX
+      07 83 34 77 80
     </li>
     <li class="icon">
       <img src="https://www.svgrepo.com/show/513317/location-pin.svg" class="contact-icon" alt="Lieu">
@@ -50,6 +70,13 @@
       <img src="https://www.svgrepo.com/show/512317/github-142.svg" class="contact-icon" alt="Github">
       github.com/Tidiane31225
     </li>
+    <li class="icon website">
+  <em>
+    <a href="https://tidiane31225.github.io" target="_blank">
+    Lien : CV en ligne (accès : RecrutezMoi2026!)
+    </a>
+  </em>
+</li>
   </ul>
 </section>
 
@@ -96,7 +123,7 @@
             <h3>Association Racine n'co </h3>
         <p>
           Participation à l'organisation du 
-          festival (mmontage, démontage
+          festival (montage, démontage
           de scène, tenue de la caisse),
           contribution au site internet.
         </p>
@@ -128,13 +155,58 @@
       <h3>Baccalauréat Général</h3>
       <span class="date">2022</span>
       <ul>
-        <li>Spécialités Mathématiques et NSI - Mention Bien</li>
+        <li>Spécialités Mathématiques et NSI - Mention Assez bien</li>
       </ul>
     </div>
   </div>
 </section>
 
-      <section class="timeline">
+    <section>
+  <h2>Projets personnels</h2>
+
+  <div class="timeline">
+
+    <div class="item">
+      <div class="dot"></div>
+      <div>
+        <strong>Problème du voyageur de commerce</strong><br>
+        <span class="date">2025</span>
+        <p>
+        Projet académique, développement en C d’algorithmes 
+        d’optimisation combinatoire, analyse de performance, 
+        validation automatisée en Python et travail collaboratif en équipe.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="dot"></div>
+      <div>
+        <strong>Site web Association</strong><br>
+        <span class="date">2024</span>
+        <p>
+          Conception et développement d’un site web pour une Association.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="dot"></div>
+      <div>
+        <strong>Application de gestion immobilière (Java / OCaml) </strong><br>
+        <span class="date">2024</span>
+        <p>
+          Projet académique orienté objet permettant la gestion de biens immobiliers 
+          (création, vérification d’unicité, gestion des entités). Implémentation 
+          d’un système de stockage en OCaml pour la gestion des données.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="timeline">
         <h2>Expériences professionnelles</h2>
 
         <div class="item">
@@ -152,7 +224,7 @@
       </section>
 
       <section>
-  <h2>Projets personnels</h2>
+  <h2>Projets professionnel</h2>
   <div class="project-item">
     <h3>Spécialisation Data & IA</h3>
   Passionné par l'intelligence logicielle, je projette de devenir <strong>ML Engineer</strong>. 

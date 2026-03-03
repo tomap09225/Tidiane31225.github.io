@@ -48,7 +48,8 @@ body {
 /* ===== SEPARATEUR POINTILLES ===== */
 .separator {
   border-top: 4px dashed #000;
-  margin: 0 30px;
+  margin: 0; 
+  width: 100%; 
 }
 
 /* ===== COLONNES ===== */
@@ -57,13 +58,7 @@ body {
 }
 
 
-/* ===== GAUCHE ===== */
-.left {
-  width: 35%;
-  background: #f7f7f7;
-  padding: 25px;
-  /* On a enlevé le border-right: 3px solid #000; ici */
-}
+
 
 /* ===== DROITE ===== */
 .right {
@@ -74,14 +69,30 @@ body {
 /* ===== SEPARATIONS HORIZONTALES ===== */
 section h2 {
   font-size: 18px;
-  text-transform: uppercase; /* Pour le style pro */
-  border-bottom: 2px solid #000; /* Ligne sous le titre */
+  text-transform: uppercase; 
+  border-bottom: 2px solid #000; 
   padding-bottom: 8px;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 
-/* ===== ALIGNEMENT CONTACT & COMPÉTENCES ===== */
+/* ===== GAUCHE ===== */
+.left {
+  width: 35%;
+  background: #f7f7f7;
+  padding: 25px;
+ 
+}
+
+.left section {
+  margin-bottom: 110px;
+}
+
+.left section:last-child {
+  margin-bottom: 0;
+}
+
+
 /* ===== CONTACT ===== */
 .icon-list {
   list-style: none;
@@ -91,8 +102,8 @@ section h2 {
 
 .icon {
   display: flex;
-  align-items: center; /* Aligne l'icône au milieu du texte */
-  gap: 15px;           /* Espace entre l'icône et le texte */
+  align-items: center; 
+  gap: 15px;           
   margin-bottom: 12px;
   font-size: 14px;
 }
@@ -100,17 +111,23 @@ section h2 {
 .contact-icon {
   width: 18px;
   height: 18px;
-  /* Rend l'icône grise comme sur ton exemple */
   filter: invert(30%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
   flex-shrink: 0;
 }
 
-/* On supprime les anciens points ou symboles CSS */
-.icon::before, .skill::before {
-  content: none !important;
+
+.website a {
+  color: #000;
+  text-decoration: none;
+  font-style: italic;
 }
 
-/* ===== COMPETENCES (LOGOS COULEURS) ===== */
+.website a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===== COMPETENCES ===== */
 .skills-list {
   list-style: none;
   padding: 0;
@@ -119,8 +136,8 @@ section h2 {
 
 .skill {
   display: flex;
-  align-items: flex-start; /* Aligne le logo sur la première ligne (le titre) */
-  gap: 15px;               /* Même écart que pour le contact pour l'alignement vertical */
+  align-items: flex-start; 
+  gap: 15px;               
   margin-bottom: 20px;
 }
 
@@ -128,7 +145,7 @@ section h2 {
   width: 28px;
   height: 28px;
   flex-shrink: 0;
-  margin-top: 2px; /* Ajustement pour que le logo soit bien en face du texte en gras */
+  margin-top: 2px; 
 }
 
 .skill strong {
@@ -137,7 +154,7 @@ section h2 {
   margin-bottom: 2px;
 }
 
-/* ===== TIMELINE (CORRIGÉE) ===== */
+/* ===== TIMELINE ===== */
 .timeline {
   position: relative;
   padding-left: 5px;
@@ -146,15 +163,15 @@ section h2 {
 .timeline .item {
   display: flex;
   position: relative;
-  padding-bottom: 25px; /* Espace entre les expériences */
+  padding-bottom: 25px; 
 }
 
-/* Le trait vertical : commence sous le premier point et s'arrête au dernier */
+
 .timeline .item:not(:last-child)::before {
   content: "";
   position: absolute;
   left: 6px;
-  top: 20px; /* Commence après le point noir */
+  top: 20px; 
   bottom: 0;
   width: 2px;
   background: #000;
